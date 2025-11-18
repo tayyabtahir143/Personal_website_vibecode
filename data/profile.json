@@ -1,0 +1,110 @@
+{
+  "name": "Rasik Tiwari",
+  "tagline": "IT Support, Automation, and Cloud-focused engineer building reliable systems end-to-end.",
+  "summary": "Hands-on IT Support & Infrastructure engineer with strong troubleshooting depth, automation mindset, and a growing focus on cybersecurity and cloud systems. I bring a mix of field experience, MSP workflows, scripting, device management, and practical problem-solving across modern enterprise environments.",
+  "location": "Brisbane, Australia",
+  "resumeUrl": "assets/Rasik-Tiwari-Resume.docx",
+  "about": "I work across desktop support, field engineering, automation, cloud tooling, and security-aligned workflows. My experience spans imaging pipelines, Microsoft 365, Intune/Autopilot, Active Directory, hardware lifecycle, and building reliable operational processes. I enjoy solving real-world tech issues, designing clean systems, and documenting solutions that help teams scale. My long-term path is toward GRC and cybersecurity, supported by continuous upskilling, home labs, and hands-on engineering work.",
+  "focusAreas": [
+    "IT Support & Field Engineering",
+    "Automation & PowerShell",
+    "Cloud and Endpoint Management",
+    "Cybersecurity Fundamentals",
+    "GRC & Compliance Pathway"
+  ],
+  "highlightSkills": [
+    "Windows 10/11 administration",
+    "Microsoft 365 troubleshooting",
+    "Intune & Autopilot deployment",
+    "Active Directory & identity ops",
+    "Hardware diagnostics & repairs",
+    "Automation with PowerShell",
+    "Root-cause analysis",
+    "Ticketing systems (MSP workflows)",
+    "System imaging & device rollout",
+    "Incident handling & escalation"
+  ],
+  "stats": {
+    "experienceYears": 2
+  },
+  "social": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/rasik-tiwari"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Angel16989"
+    },
+    {
+      "label": "Portfolio",
+      "url": "https://www.rasiktiwari.com.au"
+    }
+  ],
+  "experience": [
+    {
+      "title": "IT Support Engineer / Field Services",
+      "company": "Swift Computers (Client: FL Smidth – Mining)",
+      "period": "2025 - present",
+      "summary": "Supporting enterprise users across desktops, laptops, and meeting-room devices. Handling hardware replacements, imaging, configuration, asset tracking, Intune/Autopilot rollouts, AD join/reset operations, Teams/Outlook issues, network troubleshooting, and incident response. Responsible for diagnostics, root-cause analysis, and coordinating escalations for complex tickets."
+    },
+    {
+      "title": "Technical Support (MSP Training)",
+      "company": "Greenlight / TechSkills",
+      "period": "2024 - 2025",
+      "summary": "Hands-on MSP-style environment training including ticket workflows, remote support, patching, device configuration, M365 troubleshooting, PowerShell basics, and standard operating procedures for end-user support and system administration."
+    },
+    {
+      "title": "IT Student Engineer / Home Lab & Project Work",
+      "company": "Independent",
+      "period": "2023 - present",
+      "summary": "Built and maintained personal labs for AD DS, Intune, automation pipelines, PowerShell tooling, imaging experiments, and cloud fundamentals. Developed a Gym Management System, portfolio site, and multiple automation scripts for device reporting and system management."
+    }
+  ],
+  "githubUsername": "Angel16989",
+  "projects": [
+    {
+      "slug": "domain-device-reports",
+      "title": "Domain Device Reporting Toolkit",
+      "description": "PowerShell-based automation scripts generating JSON/CSV inventory reports for domain-joined and standalone devices, designed for use in MSP workflows and home labs.",
+      "url": "https://github.com/Angel16989/domain-device-reports",
+      "updatedAt": "2025-11-18",
+      "stack": ["PowerShell", "Windows", "JSON"],
+      "topics": ["automation", "device-management"]
+    },
+    {
+      "slug": "l9-fitness-system",
+      "title": "L9 Fitness Gym Management System",
+      "description": "Full-stack gym membership and operational management system built for capstone project, including admin dashboards, booking features, secure login, and scalable architecture.",
+      "url": "https://github.com/Angel16989",
+      "updatedAt": "2025-10-30",
+      "stack": ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+      "topics": ["web", "management-system"]
+    }
+  ],
+  "contact": [
+    {
+      "label": "Email",
+      "value": "rasiktiwari80@gmail.com",
+      "url": "mailto:rasiktiwari80@gmail.com"
+    },
+    {
+      "label": "LinkedIn",
+      "value": "/in/rasik-tiwari",
+      "url": "https://www.linkedin.com/in/rasik-tiwari"
+    },
+    {
+      "label": "GitHub",
+      "value": "@Angel16989",
+      "url": "https://github.com/Angel16989"
+    },
+    {
+      "label": "Website",
+      "value": "rasiktiwari.com.au",
+      "url": "https://www.rasiktiwari.com.au"
+    }
+  ],
+  "admin": {
+    "hint": "Enter the ADMIN_TOKEN you configure on the backend server."
+  }
+}

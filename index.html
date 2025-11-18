@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>Personal HQ - Portfolio & Blog</title>
+    <meta
+      name="description"
+      content="A fast personal website that showcases your work, writing, and live GitHub projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="top">
+        <nav class="navigation">
+          <a class="brand" href="#top" aria-label="Homepage">
+            <span id="brand-mark">VX</span>
+            <span id="brand-name">Your Name</span>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="nav-actions" id="adminActions" hidden>
+            <button class="btn ghost small" id="adminButton">Admin</button>
+          </div>
+        </nav>
+      </header>
+
+      <div class="admin-banner" id="adminBanner" role="status" aria-live="polite" hidden>
+        <div>
+          <p class="eyebrow">Admin mode</p>
+          <p id="adminStatus">
+            You are viewing the visitor version. Enter your passphrase to unlock quick
+            edit/share shortcuts.
+          </p>
+          <small id="adminHint"></small>
+        </div>
+        <div class="admin-actions">
+          <button class="btn primary small" id="adminLogin">Log in</button>
+          <button class="btn ghost small" id="adminLogout">Log out</button>
+        </div>
+      </div>
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow" id="hero-location">Based somewhere</p>
+            <h1 id="hero-title">
+              Building thoughtful products across web, data, and AI
+            </h1>
+            <p class="lead" id="hero-summary">
+              I design, ship, and scale digital experiences that feel personal.
+            </p>
+            <div class="hero-cta">
+              <a class="btn primary" id="resumeCta" href="#" target="_blank"
+                >View resume</a
+              >
+              <a class="btn ghost" id="latestPostCta" href="#blog"
+                >Read my latest post</a
+              >
+            </div>
+            <ul class="social" id="socialLinks" aria-label="Social links"></ul>
+          </div>
+          <div class="hero-visual">
+            <div class="avatar-glow"></div>
+            <img
+              src="assets/myphoto.jpg"
+              alt="Portrait of Rasik Tiwari"
+              class="hero-photo"
+              loading="lazy"
+            />
+            <div class="hero-card">
+              <p>Currently focused on</p>
+              <ul id="focusList"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats" aria-label="Personal metrics">
+          <div class="stat-card">
+            <span class="label">Experience</span>
+            <strong id="stat-experience">5 yrs</strong>
+            <p>Product engineering</p>
+          </div>
+          <div class="stat-card">
+            <span class="label">Projects</span>
+            <strong id="stat-projects">0</strong>
+            <p>Public repositories</p>
+          </div>
+          <div class="stat-card">
+            <span class="label">Writing</span>
+            <strong id="stat-posts">0</strong>
+            <p>Published essays</p>
+          </div>
+          <div class="stat-card">
+            <span class="label">Coffee</span>
+            <strong>&infin;</strong>
+            <p>Daily curiosity fuel</p>
+          </div>
+        </section>
+
+        <section id="about" class="panel about">
+          <div class="panel-header">
+            <p class="eyebrow">About</p>
+            <h2>Crafting lovable digital products</h2>
+          </div>
+          <div class="panel-content">
+            <p id="aboutStory">
+              I blend engineering, product intuition, and storytelling to help
+              teams move faster.
+            </p>
+            <div class="skill-chips" id="skillChips"></div>
+          </div>
+        </section>
+
+        <section id="resume" class="panel resume">
+          <div class="panel-header">
+            <p class="eyebrow">Resume</p>
+            <h2>Snapshot of recent wins</h2>
+            <a class="btn ghost small" id="resumeDownload" href="#" target="_blank"
+              >Download PDF</a
+            >
+          </div>
+          <div class="timeline" id="experienceTimeline"></div>
+        </section>
+
+        <section id="projects" class="panel projects">
+          <div class="panel-header">
+            <p class="eyebrow">Projects</p>
+            <h2>Recent GitHub launches</h2>
+            <p class="panel-sub">
+              Pulls live data from your GitHub profile and highlights featured
+              builds.
+            </p>
+          </div>
+          <div class="project-controls">
+            <input
+              type="search"
+              id="projectSearch"
+              placeholder="Search projects by name or stack"
+              aria-label="Search projects"
+            />
+            <div class="filter-group" id="projectFilters"></div>
+          </div>
+          <div class="projects-grid" id="projectsGrid" role="list"></div>
+          <p class="muted" id="projectsFallback">
+            Add your GitHub username inside <code>data/profile.json</code> to
+            load repositories automatically.
+          </p>
+        </section>
+
+        <section id="blog" class="panel blog">
+          <div class="panel-header">
+            <p class="eyebrow">Blog</p>
+            <h2>Signal over noise</h2>
+          </div>
+          <div class="blog-toolbar">
+            <input
+              type="search"
+              id="blogSearch"
+              placeholder="Search by topic or title"
+              aria-label="Search blog posts"
+            />
+            <div class="tag-group" id="blogTags"></div>
+          </div>
+          <div class="admin-composer" id="blogComposer" hidden>
+            <div class="composer-head">
+              <div>
+                <span class="admin-flag">Admin composer</span>
+                <h3>Create a new post</h3>
+                <p class="muted">
+                  Draft posts render instantly for you. Copy or download the Markdown to add it to
+                  your repo when you're ready.
+                </p>
+              </div>
+              <div class="composer-hint" id="composerHint"></div>
+            </div>
+            <form id="composerForm" class="composer-form">
+              <label>
+                Title
+                <input type="text" id="composerTitle" placeholder="Give your essay a hook" required />
+              </label>
+              <label>
+                Summary
+                <input
+                  type="text"
+                  id="composerSummary"
+                  placeholder="One-liner that shows up on cards"
+                />
+              </label>
+              <label>
+                Publish date
+                <input type="date" id="composerDate" />
+              </label>
+              <label>
+                Tags (comma separated)
+                <input type="text" id="composerTags" placeholder="AI, Automation, Career" />
+              </label>
+              <label>
+                Canonical URL
+                <input type="url" id="composerCanonical" placeholder="https://example.com/post" />
+              </label>
+              <label>
+                Hero image URL
+                <input type="url" id="composerHero" placeholder="https://images..." />
+              </label>
+              <label>
+                Body (Markdown allowed)
+                <textarea
+                  id="composerContent"
+                  rows="8"
+                  placeholder="Write your post in Markdown..."
+                  required
+                ></textarea>
+              </label>
+              <div class="composer-actions">
+                <button type="submit" class="btn primary small" id="composerPublish">
+                  Publish to site
+                </button>
+                <button type="button" class="btn ghost small" id="composerPreview">
+                  Load draft preview
+                </button>
+                <button type="button" class="btn ghost small" id="composerCopy">
+                  Copy Markdown
+                </button>
+                <button type="button" class="btn ghost small" id="composerDownload">
+                  Download Markdown
+                </button>
+                <button type="button" class="btn ghost small" id="composerReset">Reset</button>
+              </div>
+            </form>
+          </div>
+          <div class="blog-grid" id="blogGrid" role="list"></div>
+        </section>
+
+        <section id="contact" class="panel contact">
+          <div class="panel-header">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's build something together</h2>
+          </div>
+          <div class="contact-grid" id="contactGrid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; <span id="footerYear"></span> <span id="footerName">Your Name</span></p>
+        <p>
+          Built with &hearts;, vanilla HTML, CSS, and a touch of automation. Deploy on
+          any static host.
+        </p>
+      </footer>
+    </div>
+
+    <div class="post-panel" id="postPanel" aria-live="assertive">
+      <button class="post-panel-close" id="postPanelClose" aria-label="Close post">
+        &times;
+      </button>
+      <article id="postPanelBody"></article>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

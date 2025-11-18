@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Ship Systems, Not Just Features",
+    "slug": "ship-systems-not-just-features",
+    "publishedAt": "2025-02-02",
+    "summary": "My playbook for moving faster without losing creative control: design operating systems that turn good ideas into repeatable wins.",
+    "tags": [
+      "Product",
+      "Systems"
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=60",
+    "canonicalUrl": "https://example.com/blog/ship-systems",
+    "readingTime": 1,
+    "contentHtml": "<p>The fastest teams I work with have one thing in common: they build <strong>systems</strong> before they obsess over fireworks. Systems look boring on day one but compound into unfair advantages.</p><h2>A system for everything</h2><p>1. <strong>Signals</strong> - what questions matter now?\n2. <strong>Inputs</strong> - which users unlock momentum?\n3. <strong>Loops</strong> - how do we feed learning back into the roadmap?</p><p>When every launch connects back to those three loops, ship velocity no longer depends on heroics.</p><h2>The automation layer</h2><p>Automation is the connective tissue. In my personal stack:</p><p>``<code>text\nLinear -> Notion -> GitHub -> Website -> LinkedIn\n</code>``</p><p>A small Node script ingests Markdown, populates the blog JSON, and hits the LinkedIn UGC API. One command, two distribution channels.</p><h2>Action items</h2>\n<ul><li>Write a short memo titled \"How we decide what to build\".</li>\n<li>Automate one distribution workflow this week.</li>\n<li>Review the system monthly. Prune aggressively.</li></ul><p>The point is not to automate empathy. It is to free up more cycles for it.</p>",
+    "sourcePath": "content\\posts\\ship-systems.md"
+  },
+  {
+    "title": "Building With AI Co-pilots Without Losing Taste",
+    "slug": "building-with-ai-co-pilots-without-losing-taste",
+    "publishedAt": "2025-01-12",
+    "summary": "Thoughts on pairing with AI tools to speed up delivery while keeping a sharp point of view.",
+    "tags": [
+      "AI",
+      "Craft"
+    ],
+    "heroImage": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=60",
+    "canonicalUrl": "https://example.com/blog/build-with-ai",
+    "readingTime": 1,
+    "contentHtml": "<p>I keep hearing that AI strips away the soul of craft. It only does that when you abdicate intent. Treat the models as collaborators with sharp guardrails:\n<ul><li><strong>Drafting:</strong> Let the copilot outline, then rewrite the hook yourself.</li>\n<li><strong>Refactoring:</strong> Ask for edge-case hunts, but keep domain logic in your head.</li>\n<li><strong>Distribution:</strong> Use AI to repurpose snippets, not to invent what you never said.</li></p><p>These simple constraints help me keep a consistent voice while shipping more.</p><h3>Tools I lean on</h3>\n<li>Cursor for exploratory coding sprints.</li>\n<li>V0 for wireframes when time-boxed to 20 minutes.</li>\n<li>My own prompt library stored beside the codebase, versioned just like any other artifact.</li></ul><p>Taste is a backlog item. Automate everything else so you can invest more in it.</p>",
+    "sourcePath": "content\\posts\\ai-building.md"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "personal-hq",
+  "version": "1.0.0",
+  "description": "Static personal portfolio + blog site with local Markdown workflow.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build:posts": "node automation/publish.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2"
+  }
+}

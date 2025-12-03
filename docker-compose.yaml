@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  personal_hq:
+    build: .
+    container_name: personal-hq
+    ports:
+      - "4000:4000"         # host:container
+    environment:
+      ADMIN_TOKEN: "change-me-super-secret"  # use something strong
+      PORT: "4000"
+      HOST: "0.0.0.0"
+    # Optional but useful: persist posts + generated data on the host
+    volumes:
+      - ./content:/usr/src/app/content
+      - ./data:/usr/src/app/data
+    restart: unless-stopped
+
